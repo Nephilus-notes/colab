@@ -1,3 +1,32 @@
 .container {
-    padding-top: 5rem;
+  background-image: linear-gradient();
+}
+
+#first {
+    padding-top: 4rem;
+
+}
+
+.grow {
+  transition: all 0.2s ease-in-out;
+}
+
+.grow:hover {
+  transform: scale(1.1);
+}
+
+
+.card {
+    max-width: 50rem;
+    margin: 1rem auto 5rem auto;
+}
+
+.bigWords {
+    font-size:  3rem;
+}
+
+.button {
+    background-color: #72CDAB;
+    padding: .3rem;
+    border-radius: .3rem
 }
