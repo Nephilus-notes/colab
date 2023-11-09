@@ -1,5 +1,10 @@
 .container {
-  background-image: linear-gradient();
+  margin: auto;
+}
+
+.bg {
+    background-image: linear-gradient(rgb(246, 248, 250), #fff3ce, #d2edff) ;
+
 }
 
 #first {
@@ -12,13 +17,14 @@
 }
 
 .grow:hover {
-  transform: scale(1.1);
+  transform: scale(1.5);
 }
 
 
 .card {
     max-width: 50rem;
-    margin: 1rem auto 5rem auto;
+    margin: 0 auto;
+    padding-bottom: 10rem;
 }
 
 .bigWords {
@@ -28,5 +34,9 @@
 .button {
     background-color: #72CDAB;
     padding: .3rem;
-    border-radius: .3rem
+    border-radius: .3rem;
+}
+
+.card p {
+    margin-bottom: 1rem;
 }

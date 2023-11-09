@@ -17,4 +17,14 @@ export class IndexComponent {
   kissesUrl: string = `{${environment.million_kisses_url}}`
   emeraldsUrl: string = `{${environment.emeralds_url}}`
   headshotUrl: string = `{${environment.michael_hull_headshot_url}}`
+
+  historyTitle: string = "What I've Done"
+  historyContent: string = "lots of stuff. You're welcome"
+  historyButtonText: string = "See More"
+  historyLink: string = "history"
+
+  titlestuff: string = "Charles McCall, Charming creator, dashing developer, and all around Renaissance man Projects?"
+  contentstuff: string = "Need a developer that does C# and works in .NET or Unity? How about someone happy in Typescript building in Angular or React?"
+  buttonTextstuff: string = "See More"
+  linkstuff: string = "/api"
 }
