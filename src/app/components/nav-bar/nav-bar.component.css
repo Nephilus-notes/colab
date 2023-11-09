@@ -56,9 +56,12 @@
     background-color: #EFA6D2 ;
 }
 
+.navItem {
+    border-radius: 1rem;
+    padding: .2rem;
+}
 .navItem:hover {
     color: #FFCC35;
     background-color: #485BFF;
-    border-radius: 1rem;
-    padding: .2rem;
+
 }
