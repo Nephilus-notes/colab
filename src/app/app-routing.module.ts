@@ -1,10 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { IndexComponent } from './views/index/index.component';
+import { BioComponent } from './views/bio/bio.component';
+import { ApiComponent } from './views/api/api.component';
+import { ProjectsComponent } from './views/projects/projects.component';
 
 const routes: Routes = [
   { path: '', component: IndexComponent },
-  // { path: 'bio', component: BioViewerComponent },
+   { path: 'history', component: BioComponent },
+   { path: 'api', component: ApiComponent },
+   { path: 'project', component: ProjectsComponent },
 ];
 
 @NgModule({

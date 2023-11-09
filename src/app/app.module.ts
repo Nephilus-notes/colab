@@ -9,6 +9,9 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { CardComponent } from './components/card/card.component';
 import { MainComponent } from './components/main/main.component';
 import { BigPictureComponent } from './big-picture/big-picture.component';
+import { BioComponent } from './views/bio/bio.component';
+import { ApiComponent } from './views/api/api.component';
+import { ProjectsComponent } from './views/projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { BigPictureComponent } from './big-picture/big-picture.component';
     NavBarComponent,
     CardComponent,
     MainComponent,
-    BigPictureComponent
+    BigPictureComponent,
+    BioComponent,
+    ApiComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
