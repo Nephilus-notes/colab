@@ -8,6 +8,7 @@ import { IndexComponent } from './views/index/index.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { CardComponent } from './components/card/card.component';
 import { MainComponent } from './components/main/main.component';
+import { BigPictureComponent } from './big-picture/big-picture.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { MainComponent } from './components/main/main.component';
     IndexComponent,
     NavBarComponent,
     CardComponent,
-    MainComponent
+    MainComponent,
+    BigPictureComponent
   ],
   imports: [
     BrowserModule,
