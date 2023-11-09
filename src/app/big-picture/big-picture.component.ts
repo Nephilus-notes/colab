@@ -7,6 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class BigPictureComponent {
 @Input() pictureURL!: string;
+localPictureURL: string = `./assets/img/Armor with smoke tunic.jpg`
 
 
 }
