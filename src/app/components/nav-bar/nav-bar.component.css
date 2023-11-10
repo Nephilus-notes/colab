@@ -27,26 +27,6 @@
     z-index: 1;
 }
 
-.box {
-    width: 3rem;
-    height: 3rem;
-    position: absolute;
-}
-.yellow {
-    background-color: #FFCC35;
-    translate: 6.5rem -3.5rem;
-}
-
-.blue {
-    background-color: #485BFF;
-    translate: 4rem -2.75rem;
-}
-
-.teal {
-    background-color: #5FBEFF;
-    translate: 1.5rem -2rem;
-
-}
 
 .green {
     background-color: #72CDAB;

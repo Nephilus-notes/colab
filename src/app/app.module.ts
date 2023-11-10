@@ -12,6 +12,8 @@ import { BigPictureComponent } from './big-picture/big-picture.component';
 import { BioComponent } from './views/bio/bio.component';
 import { ApiComponent } from './views/api/api.component';
 import { ProjectsComponent } from './views/projects/projects.component';
+import { LogoComponent } from './components/logo/logo.component';
+import { PhotoCardComponent } from './photo-card/photo-card.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { ProjectsComponent } from './views/projects/projects.component';
     BigPictureComponent,
     BioComponent,
     ApiComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    LogoComponent,
+    PhotoCardComponent
   ],
   imports: [
     BrowserModule,
