@@ -37,11 +37,22 @@
 }
 
 .navItem {
-    border-radius: 1rem;
-    padding: .2rem;
+    border-radius: .375rem;
+    padding: .375rem .5rem;
 }
 .navItem:hover {
-    color: #FFCC35;
-    background-color: #485BFF;
+    /* color: #485BFF; */
+    background-color: #72cdac63;
+    box-shadow: 0 0 1rem rgba(204, 204, 204, 0.607);
+}
 
+.green {
+    background-color: #72CDAB;
+}
+.blue {
+    background-color: #485BFF;
+}
+
+.yellow {
+    background-color: #FFCC35;
 }

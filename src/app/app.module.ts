@@ -13,7 +13,7 @@ import { BioComponent } from './views/bio/bio.component';
 import { ApiComponent } from './views/api/api.component';
 import { ProjectsComponent } from './views/projects/projects.component';
 import { LogoComponent } from './components/logo/logo.component';
-import { PhotoCardComponent } from './photo-card/photo-card.component';
+import { PhotoCardComponent } from './components/photo-card/photo-card.component';
 
 @NgModule({
   declarations: [

@@ -6,3 +6,35 @@
 * {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+@layer base {
+    h1 {
+        @apply text-4xl font-bold;
+    }
+    h2 {
+        @apply text-3xl font-bold;
+    }
+    h3 {
+        @apply text-2xl font-bold;
+    }
+    h4 {
+        @apply text-xl font-bold;
+    }
+
+    p {
+        @apply text-lg;
+    }
+/* 
+    .container {
+        @apply flex justify-between mx-auto p-4;
+    } */
+
+    .card {
+        @apply max-w-4xl mx-auto pb-40;
+    }
+
+    .button {
+        @apply p-1.5 rounded-md bg-green-400 hover:bg-yellow-300;
+    }
+
+}
