@@ -34,7 +34,7 @@
     }
 
     .button {
-        @apply p-1.5 rounded-md bg-green-400 hover:bg-yellow-300;
+        @apply p-1.5 rounded-md bg-colab-teal hover:bg-colab-yellow;
     }
 
 }
