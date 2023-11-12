@@ -5,18 +5,22 @@
 
             <app-logo></app-logo>
         </div>
-        <ul class="nav" >
-            <!-- [class.is-open]="isMenuOpen" -->
+        <div class="burger" (click)="toggleMenu()">
+            <i class="materials-icons menu-button"> {{ isMenuOpen ? "close" : "menu" }}</i>
+        </div>
+        <ul class="nav" [class.is-open]="isMenuOpen">
+            
             <!-- <li class="navItem"></li>
         <li class="navItem"></li> -->
             <a href="" class="navItem" routerLink="/"
-            routerLinkActive="active">Home who am i</a>
-            <a href="" class="navItem" routerLink="/history" routerLinkActive="active">Darling what have I done? (History)</a>
+            routerLinkActive="active">Home</a>
+            <a href="" class="navItem" routerLink="/history" routerLinkActive="active">What I've Done</a>
             <a href="" class="navItem" routerLink="/api" routerLinkActive="active">api stuff</a>
             <a href="" class="navItem" routerLink="/projects" routerLinkActive="active">The Whistler (projects)</a>
         </ul>
-        <!-- <button class="minMax" (onClick)="minMax()">
+        <button class="minMax" (click)="toggleMenu()">
            {{buttonText}}
-        </button> -->
+        </button>
+
     </div>
 </div>
