@@ -7,11 +7,12 @@
     display: flex;
     justify-content: space-between;
     gap: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .img-container {
-    width: 50%;
-
+    min-width: 50%;
 }
 
 .card {
@@ -24,6 +25,7 @@
 
 .content {
     padding: 2rem;
+    font-size: 1rem;
 }
 
 .right {
