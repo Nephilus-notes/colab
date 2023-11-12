@@ -9,4 +9,8 @@ export class PhotoCardComponent {
 
   @Input() right!: boolean;
   @Input() left!: boolean;
+@Input() controlCode!: number;
+@Input() imagePath!: string;
+@Input() content!: string;
+
 }

@@ -2,7 +2,7 @@
 
 <p>bio works!</p>
 
-<app-photo-card [right]='conditional'></app-photo-card>
+<app-photo-card [right]='conditional' [controlCode]="controlCodePhoto" [imagePath]="seattleImg" [content]="seattleContent"></app-photo-card>
 <app-photo-card [left]='conditional'></app-photo-card>
 <app-photo-card [right]='conditional'></app-photo-card>
 
@@ -17,3 +17,8 @@ Qui excepturi eos exercitationem, fugiat doloribus repellendus laboriosam culpa 
     bio
 </p>
 </div>
+
+<!-- 
+@Input() controlCode!: string;
+@Input() imagePath!: string;
+@Input() content!: string; -->
