@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./bio.component.css']
 })
 export class BioComponent {
-
+conditional: boolean = true;
 }
