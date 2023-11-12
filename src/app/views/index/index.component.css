@@ -2,11 +2,6 @@
   margin: auto;
 }
 
-.bg {
-    background-image: linear-gradient(rgb(246, 248, 250), #fff3ce, #d2edff) ;
-z-index: -2;
-}
-
 #first {
     padding-top: 4rem;
 
