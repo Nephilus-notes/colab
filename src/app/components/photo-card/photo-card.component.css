@@ -6,9 +6,30 @@
 .flex-row {
     display: flex;
     justify-content: space-between;
-
+    gap: 2rem;
 }
 
 .img-container {
     width: 50%;
+
+}
+
+.card {
+    background-color: #72cdac8a;
+    border-radius: .5rem;
+    padding-bottom: 0;
+    margin-bottom: 10rem;
+    box-shadow: 0 0 2rem 2rem #72cdac8a;
+}
+
+.content {
+    padding: 2rem;
+}
+
+.right {
+    padding: 2rem;
+}
+
+.left {
+    padding: 2rem;
 }
