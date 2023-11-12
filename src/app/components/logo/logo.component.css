@@ -3,6 +3,7 @@
     width: 3rem;
     height: 3rem;
     position: absolute;
+    z-index: 0;
 }
 .yellow {
     translate: 6.5rem -3.5rem;
