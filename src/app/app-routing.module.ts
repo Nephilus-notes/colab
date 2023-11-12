@@ -9,7 +9,8 @@ const routes: Routes = [
   { path: '', component: IndexComponent },
    { path: 'history', component: BioComponent },
    { path: 'api', component: ApiComponent },
-   { path: 'project', component: ProjectsComponent },
+   { path: 'projects', component: ProjectsComponent },
+   { path: '**', component: IndexComponent }
 ];
 
 @NgModule({
