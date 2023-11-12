@@ -6,5 +6,23 @@ import { Component } from '@angular/core';
   styleUrls: ['./nav-bar.component.css']
 })
 export class NavBarComponent {
+buttonText:string = "^"
+isMenuOpen:boolean = false;
+
+
+toggleMenu(): void {
+  this.isMenuOpen = !this.isMenuOpen;
+  if (this.isMenuOpen) {
+    this.buttonText = "v"
+  } else {
+    this.buttonText = "^"
+  }
+
+}
+
+// public minMax(): void {
+//   this.
+// }
+
 
 }
