@@ -7,7 +7,9 @@ module.exports = {
       "colab-blue": "#485BFF",
       "colab-yellow": "#FFCC35",
       "colab-pink": "#EFA6D2",
-      "colab-light-blue": "#5FBEFF"
+      "colab-light-blue": "#5FBEFF",
+      "colab-pale-blue": "#d2edff",
+      "colab-pale-yellow": "#fff3ce"
     },
     extend: {},
   },
