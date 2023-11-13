@@ -13,8 +13,10 @@ export interface Article {
     published_date: string;
     material_type_facet: string;
     kicker: string;
-    // des_facet?: string;
-    // org_facet?: string;
-    // per_facet?: string;
-    // geo_facet?: string;
+    des_facet?: Array<any>;
+    org_facet?: Array<any>;
+    per_facet?: Array<any>;
+    geo_facet?: Array<any>;
+    multimedia?: Array<any>;
+    short_url: string;
 }

@@ -12,9 +12,11 @@ export class ApiService {
   constructor(private http: HttpClient) { }
 NYTimesURL: string = "https://api.nytimes.com/svc/topstories/v2/home.json?api-key=R9GzySamDkKvMtFQnDnKu5qNiZ1a0lDE"
 
-public getHomeArticles(): Observable<Article[]> {
-  const articles = this.http.get<Article[]>(this.NYTimesURL);
-  return articles;
+public getHomeArticles(): Observable<any> {
+
+  const response = this.http.get<any>(this.NYTimesURL);
+
+  return response;
 }
 
 }

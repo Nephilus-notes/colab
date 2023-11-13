@@ -1,0 +1,23 @@
+.bg {
+    padding-bottom: 3rem;
+    padding-inline: 3rem;
+}
+
+.blurb p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 2rem;
+    max-width: 60rem;
+    margin: 0 auto 5rem auto
+}
+
+.floating_logo {
+    /* position:absolute; */
+    display: inline-block;
+    max-width: 50px;
+
+}
+
+.byline {
+    max-width: 60rem;
+}

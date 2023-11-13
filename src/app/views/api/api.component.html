@@ -1,9 +1,55 @@
-<p>projects works!</p>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus alias quod porro unde id, iure doloremque ut dolore, in tempora soluta exercitationem reiciendis officia! Quas accusamus iste nesciunt atque iure.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt expedita amet voluptas fuga, necessitatibus dicta ab fugiat aut ipsa velit ea consequatur odit a enim vero cumque voluptatibus incidunt eaque.
-Adipisci ducimus molestiae molestias numquam nisi mollitia! Eligendi voluptate enim impedit nam itaque totam veritatis consequuntur necessitatibus quae, ipsam cumque ad sed maxime ex et doloremque numquam? Odit, autem quibusdam?
-Ipsum placeat cupiditate magnam consequuntur fugit delectus, officiis voluptatibus temporibus? Reprehenderit laboriosam recusandae molestiae aliquam est consequuntur, repellendus officiis ipsa quaerat? Laudantium necessitatibus veritatis, natus reprehenderit quia ratione. Corrupti, esse.
-Minus, reprehenderit omnis. Unde quod deleniti officia? Blanditiis aliquid quasi ipsa accusamus quos non molestiae ipsam, vero qui illo voluptates rem, voluptatem placeat accusantium, reiciendis est ea velit consequatur cupiditate.
-Qui excepturi eos exercitationem, fugiat doloribus repellendus laboriosam culpa deserunt, adipisci porro, suscipit iste explicabo dolor dolores libero amet placeat consequuntur modi ea a. Magni eveniet fugiat praesentium porro quae.
-<p></p>
-api
+<div class="bg">
+
+    <!-- <button class="button" (click)="getArticles()"> click for articles in the console</button> -->
+    <a href="https://developer.nytimes.com"><img src="/assets/img/poweredby_nytimes_200a.png"
+            alt="Powered By NY Times flag" class="ny_times_banner"></a>
+    <div class="blurb text-center">
+        <h2 class="mb-5"><a href="https://developer.nytimes.com"> <img class="floating_logo"
+            src="/assets/img/poweredby_nytimes_30a.png" alt="Powered By NY Times flag"></a> NY Times API</h2>
+        <p>
+            I chose this api because of it's universality, and I was
+            intrigued by the terms and conditions that were included in its use.
+            Stipulations around branding and redirection intrigued me, and I felt
+            that it was far more useful to have real news in my project than to give
+            the user the ability to create or buy fake products just for experience
+            with the Stripe API, for example. </p>
+
+        <p>
+            <!-- <img class="floating_logo" src="/assets/img/spotify.png" alt="Powered By NY Times flag"> -->
+            I thought about taking a music centered
+            approach and using the Spotify API to play specific songs with lyrics relevant
+            to the page they were navigating. However, the Spotify API used the user's own Spotify
+            credentials in order to play specific songs and I didn't feel I could rely on that
+            in this instance.
+        </p>
+
+        <p>
+            <!-- <img class="floating_logo" src="/assets/img/Google Maps Logo - Download Free Vector PNG.png" alt="Powered By NY Times flag"> -->
+            I also considered using the Google Maps API to show users nearby
+            restaurants, and several more niche APIs but could not convince myself that any of them
+            made for an interesting enough user experience.
+
+        </p>
+    </div>
+    <div *ngFor="let article of articles" class="pb-10 text-center items-center">
+        <div class="flex container mx-auto gap-20">
+            <a href="{{article.url}}">
+                <img src="{{article.multimedia[1].url}}" alt="" *ngIf="article.multimedia">
+            </a>
+            <div class="info">
+                <a href="{{article.url}}" class="hover:text-colab-blue">
+                    <h2 class="max-w-xl mx-auto">{{article.title}}</h2>
+                    <p class="byline">
+                        {{article.abstract}}</p>
+                    <p>{{article.published_date}}</p>
+                    <p>{{article.byline}}</p>
+
+                    <h3>{{article.section}}</h3>
+                    <h4>{{article.subsection}}</h4>
+                </a>
+            </div>
+        </div>
+    </div>
+    <a href="https://developer.nytimes.com"><img src="/assets/img/poweredby_nytimes_200a.png"
+        alt="Powered By NY Times flag" class="ny_times_banner"></a>
+</div>
