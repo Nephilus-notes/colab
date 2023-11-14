@@ -1,6 +1,12 @@
 <div class="card">
     <h2 class="bigWords">{{title}}</h2>
-    <h3>{{link}}</h3>
+    <h3 *ngIf="!control; else lang">{{link}}</h3>
+    <ng-template #lang>
+        <h3>{{language}}</h3>
+    </ng-template>
     <p>{{content}}</p>
-    <a class="button grow" href="" routerLink="/{{link}}" routerLinkActive="active">{{buttonText}}</a>
+    <a *ngIf="!control; else outsideLink" class="button grow" href="" routerLink="/{{link}}" routerLinkActive="active">{{buttonText}}</a>
+    <ng-template #outsideLink>
+        <a class="button grow" href="{{link}}" target="blank">{{buttonText}}</a>
+    </ng-template>
 </div>
