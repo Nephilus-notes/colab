@@ -3,6 +3,8 @@ import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { Article } from '../models/article';
 
+import { environment } from 'src/environments/environment';
+
 
 @Injectable({
   providedIn: 'root'
@@ -10,7 +12,7 @@ import { Article } from '../models/article';
 export class ApiService {
 
   constructor(private http: HttpClient) { }
-NYTimesURL: string = "https://api.nytimes.com/svc/topstories/v2/home.json?api-key=R9GzySamDkKvMtFQnDnKu5qNiZ1a0lDE"
+NYTimesURL: string = `${environment.NYTIMES_TOP_STORIES_URL_HOME}${environment.NYTIMES_API_KEY}`;
 
 public getHomeArticles(): Observable<any> {
 
