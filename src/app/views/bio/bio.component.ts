@@ -6,7 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./bio.component.css']
 })
 export class BioComponent {
-conditional: boolean = true;
+
+  simple: boolean = false;
+  conditional: boolean = true;
+
+
 
 controlCodePhoto: number = 1;
 controlCodeProjects: number = 2;
@@ -21,5 +25,9 @@ rnzbImg: string = "/assets/img/mr_wolf_with_alayna].jpg"
 
 freelanceContent: string = "I returned to New York and freelanced for a few years"
 freelanceImg: string = "/assets/img/Read.jpg"
+
+  public simpleToggle(): void {
+    this.simple = !this.simple;
+  }
 
 }

@@ -16,11 +16,11 @@
 }
 
 .card {
-    background-color: #72cdac8a;
+    background-color: #5FBEFF;
     border-radius: .5rem;
     padding-bottom: 0;
     margin-bottom: 10rem;
-    box-shadow: 0 0 2rem 2rem #72cdac8a;
+    box-shadow: 0 0 2rem 2rem #5FBEFF;
 }
 
 .content {
