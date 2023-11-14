@@ -15,7 +15,7 @@ export class ApiService {
 NYTimesURL: string = `${environment.NYTIMES_TOP_STORIES_URL_HOME}${environment.NYTIMES_API_KEY}`;
 
 public getHomeArticles(): Observable<any> {
-
+  console.warn(this.NYTimesURL)
   const response = this.http.get<any>(this.NYTimesURL);
 
   return response;
