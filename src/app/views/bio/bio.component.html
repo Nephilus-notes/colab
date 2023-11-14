@@ -1,14 +1,14 @@
 <div class="bg">
 
-    <button class="toggle bg-colab-yellow p-3 rounded-md absolute" (click)="simpleToggle()">
+    <button class="toggle bg-colab-yellow p-1 md:p-3 rounded-md fixed top-10 md:top-20 right-2 z-10 text-sm md:text-lg" (click)="simpleToggle()">
         <div *ngIf="!simple; else toggleElse">
-            Simple View
+            Simple
         </div>
 
     </button>
 
         <ng-template #toggleElse>
-            Detailed View
+            Detailed
         </ng-template>
     <div *ngIf="!simple; else simpleElse">
         <h1 class="center">The Road So Far</h1>
