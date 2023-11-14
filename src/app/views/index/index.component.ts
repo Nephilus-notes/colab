@@ -9,7 +9,7 @@ import { environment } from 'src/environments/environment';
 export class IndexComponent {
 
   historyTitle: string = "What I've Done"
-  historyContent: string = `From dancing on internatinoally renowned stages at home and abroad,
+  historyContent: string = `From dancing on internationally renowned stages at home and abroad,
   singing for thousands across the country, and acting on stage and on camera, I haven't done it all but I've come close.
   Now as a developer, and I'm ready to do it all again.`
   historyButtonText: string = "Bio and CV"
