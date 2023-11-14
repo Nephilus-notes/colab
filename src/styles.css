@@ -38,7 +38,7 @@
     }
 
     .bg {
-        @apply pt-20 pb-20 bg-gradient-to-t from-colab-pale-blue via-colab-pale-yellow to-colab-pale-blue;
+        @apply pt-20 pb-20 bg-gradient-to-t from-colab-pale-blue via-colab-pale-yellow to-colab-pale-blue min-h-screen;
     }
 
 }
